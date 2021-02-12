@@ -21,6 +21,7 @@ function FindIntersection(strArr) {
     return false; 
   
   }
-     
+
+  const strArr = ["1, 3, 4, 7, 9, 13", "1, 2, 4, 13, 9, 15"]
   // keep this function call here 
-  console.log(FindIntersection(readline()));
+  console.log(FindIntersection(strArr));

@@ -22,6 +22,6 @@ function FindIntersection(strArr) {
   
   }
 
-  const strArr = ["1, 3, 4, 7, 9, 13", "1, 2, 4, 13, 9, 15"]
+  const strArr = ["1, 3, 4, 7, 9, 13, 20", "1, 2, 4, 13, 9, 15, 20"]
   // keep this function call here 
   console.log(FindIntersection(strArr));

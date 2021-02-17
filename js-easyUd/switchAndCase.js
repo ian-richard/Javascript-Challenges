@@ -1,4 +1,4 @@
-let role;
+let role = 'moderator';
 
 switch (role) {
     case 'guest':
@@ -12,3 +12,7 @@ switch (role) {
         default:
             console.log('Unknown User');
 }
+
+if (role === 'guest') console.log('Guest user');
+else if (role === 'moderator') console.log('Moderator user');
+else console.log('Unknown User');

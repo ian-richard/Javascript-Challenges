@@ -1,7 +1,8 @@
 function fizzBuzz(num){
-    if (isNaN(num))
-        return 'Not a number'
-    else if (num % 3 === 0 && num % 5 === 0)
+    // if (isNaN(num))
+    if (typeof num !== 'number')
+        return NaN
+    else if ((num % 3 === 0) && (num % 5 === 0))
         return 'FizzBuzz'
     else if (num % 3 === 0)
         return 'Fizz'
@@ -11,4 +12,4 @@ function fizzBuzz(num){
         return num;
 }
 
-console.log(fizzBuzz('a'))
+console.log(fizzBuzz(true))

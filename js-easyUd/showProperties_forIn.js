@@ -13,9 +13,9 @@ const movie = {
 // https://stackoverflow.com/questions/17781472/how-to-get-a-subset-of-a-javascript-objects-properties
 
 function showProperties(obj){
-    for (let key in obj)
-        if (typeof obj[key] === 'string')
-          console.log(key, obj[key]);
+    for (let key in obj){
+        if (typeof obj[key] === 'string') console.log(key, obj[key]);
+}
 }
 
 showProperties(movie);

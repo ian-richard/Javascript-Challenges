@@ -14,4 +14,4 @@ function showNumbers(limit){
     console.log(i, message);}
 }
 
-const test = showNumbers(10);
+const test = showNumbers(20);

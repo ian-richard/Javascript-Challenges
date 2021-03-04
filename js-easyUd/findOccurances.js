@@ -22,11 +22,12 @@ function countMethod(arr,v){
 const test1 = countMethod(numbers, 1)
 console.log(test1);
 
-function useReduce(arr, v){
+function useReduce(arr, searchElement){
     return arr.reduce((accumulator, current)=>{
         const occurrence = (current === searchElement) ? 1 : 0;
         return accumulator + occurrence;
-    })
+    },0)
 }
 
-const test 
+const test2 = useReduce(numbers, 2);
+console.log(test2);

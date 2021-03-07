@@ -1,4 +1,4 @@
-function CreatePost(title, body, author, views){
+function CreatePost(title, body, author){
         this.title = title;
         this.body = body;
         this.author = author;

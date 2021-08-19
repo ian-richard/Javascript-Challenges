@@ -9,7 +9,7 @@ function sum_array(arr){
         i < arr.length; 
         i++){
             for(let j=0;
-                j< arr[i].length;
+                j < arr[i].length;
                 j++)
             sum += arr[i][j];
         }

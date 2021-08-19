@@ -1,6 +1,8 @@
 // Goal:
 // 'Hello World' = 'dlroW olleH'
 
+
+
 function FirstReverse(str) { 
 
     var o = '';

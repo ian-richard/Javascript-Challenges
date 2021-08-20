@@ -14,7 +14,14 @@ function lucky_sevens(arr) {
     return false;
     
   }
+
   const two = [1,2]
   const arr = [2, 1, 5, 1, 0]
+  const arr__true = [2, 4, 4, 4, 4, 4, 4, 4, 6, 1, 0]
+  const test__incorrect_false = [1, 2, 7, 4]
+  const test0 = [2, 3, 2, 1]
+
+
  
-  console.log(lucky_sevens(arr));
+  
+

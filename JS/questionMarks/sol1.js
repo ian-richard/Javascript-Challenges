@@ -14,4 +14,5 @@ function QuestionsMarks(str) {
 }
 
     let readLine = 'acc?7??sss?3rr1??????5'
-    console.log(QuestionsMarks(readLine));
+    let readLine__false = 'acc?8??sss?3rr1??????5'
+    console.log(QuestionsMarks(readLine__false));

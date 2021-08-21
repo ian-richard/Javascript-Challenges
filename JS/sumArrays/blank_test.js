@@ -3,7 +3,14 @@
 // then your program should output 22 because 3 + 2 + 1 + 4 + 12 = 22. 
 // Solve without and with reduce.
 
+
+
+
+
+
 const test0 = [2,4,6]
 const test = [[3, 2], [1], [4, 12]]
 
-//pb 7-8 mins
+
+
+//pb 5 mins

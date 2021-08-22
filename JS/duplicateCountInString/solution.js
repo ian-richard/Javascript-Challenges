@@ -2,6 +2,8 @@
 function duplicateCount(str){
     const result = [];
     const strArr = str.toLowerCase().split("").sort().join("").match(/(.)\1+/g);
+    //(.) is capture group containing any charactor except line breaks
+    // /1+ matches the result of capture group #1 when 1 or more match
     
     if (strArr != null) {
       strArr.forEach((i) => {
@@ -9,7 +11,7 @@ function duplicateCount(str){
       });
     }  return result.length;
   }
-
+  
 
 const test1 = "abcde" //-> 0 # no characters repeats more than once
 const test2 = "aabbcde" //-> 2 # 'a' and 'b'
@@ -19,12 +21,12 @@ const test5 = "Indivisibilities" //-> 2 # 'i' occurs seven times and 's' occurs 
 const test6 = "aA11" //-> 2 # 'a' and '1'
 const test7 = "ABBA" //-> 2 # 'A' and 'B' each occur twice
 
-console.log(duplicateCount(test1))
+// console.log(duplicateCount(test1))
 console.log(duplicateCount(test2))
-console.log(duplicateCount(test3))
-console.log(duplicateCount(test4))
-console.log(duplicateCount(test5))
-console.log(duplicateCount(test6))
-console.log(duplicateCount(test7))
+// console.log(duplicateCount(test3))
+// console.log(duplicateCount(test4))
+// console.log(duplicateCount(test5))
+// console.log(duplicateCount(test6))
+// console.log(duplicateCount(test7))
 
 

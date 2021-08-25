@@ -5,8 +5,16 @@ const isSquare = n =>{
     // step 3. the built in sq route function, when divided by 1 is equal to 0;
     return n > 0 && Math.sqrt(n) % 1 === 0;
   }
+
+const oneLineSol = n => {
+    return Math.sqrt(n) % 1 === 0;
+}
   
-  console.log(isSquare(25)) // true
-  console.log(isSquare(0)) // true
-  console.log(isSquare(26)) // false
+//   console.log(isSquare(25)) // true
+//   console.log(isSquare(0)) // true
+//   console.log(isSquare(26)) // false
+  
+  console.log(oneLineSol(25)) // true
+  console.log(oneLineSol(0)) // true
+  console.log(oneLineSol(26)) // false
 

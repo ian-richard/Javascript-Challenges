@@ -11,6 +11,8 @@ function wave(str){
     return result;
 }
 
+
+
 const t = "this is a few words";
 
 console.log(wave(t))

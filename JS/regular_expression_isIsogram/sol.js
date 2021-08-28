@@ -14,6 +14,7 @@ function isIsogram(str){
 function isIsogram_OneLiner(str){ 
     return !/(\w).*\1/i.test(str)
   }
+  //to make sense of this use https://regexr.com/
 
 const t1 = 'Dermatoglyphics' //true
 const t2 = 'isIsogram' //false

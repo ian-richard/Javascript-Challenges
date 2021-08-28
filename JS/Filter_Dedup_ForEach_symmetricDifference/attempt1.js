@@ -1,29 +1,24 @@
-function sym(arr1, arr2) {
-    var result = []
-    // var merge = arr1.concat(arr2);
-    // const findDups = merge => merge.filter((item, index) => merge.indexOf(item) !== index)
+const diff = (arr1, arr2) => [
+    ...arr1.filter(e => !arr2.includes(e)),
+    ...arr2.filter(e => !arr1.includes(e))
+  ];
   
-    // const dups = findDups(merge)
-    const result1 = arr1.filter(function(e) {
-      return this.indexOf(e) < 0;
-    }, [...arr2])
+  const sym = (...args) => [...new Set(args.reduce(diff))];
   
-    const result2 = arr2.filter(function(e) {
-      return this.indexOf(e) < 0;
-    }, [...arr1])
-    
-    const arr3 = [...result1, ...result2];
-    return removeDup(arr3);
-  }
   
-  function removeDup(arr) {
-    let result = []
-    arr.forEach((item, index) => { if (arr.indexOf(item) == index) result.push(item) });
-    return result;
-  }
+  console.log(sym([1, 2, 3, 3], [5, 2, 1, 4]));
+  
   
   console.log(sym([1, 2, 3, 3], [5, 2, 1, 4])); // should return [3,4,5]
-
-  //needs work
   console.log(sym([1, 2, 5], [2, 3, 5], [3, 4, 5])) //should return [1, 4, 5]
+
+  /*
+  Code Explanation
+
+    The main function sym() reduces given arrays utilising helper function diff() to a single array.
+    Also, it temporary converts the result to Set to remove duplicates.
+
+    The function diff() returns the symmetric difference of two arrays by 
+    picking out elements in parameterised arrays; arr1 and arr2.
+*/
 

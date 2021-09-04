@@ -4,6 +4,7 @@ function findOdd(arr) {
        
     const occurences = arr.reduce(function (acc, curr) {
      return acc[curr] ? ++acc[curr] : acc[curr] = 1, acc}, {});
+     //If acc[curr] exists, increment is by one, if not set it to 1.
    
     for (const property in occurences){
       if ( occurences[property] % 2 == 1 || occurences[property] == 1){

@@ -16,7 +16,13 @@ function XO_match(str) {
   return (x && x.length) === (o && o.length);
 }
 
-const XO = str => {
+
+
+  function XO(str) {
+    return str.replace(/o/ig, '').length == str.replace(/x/ig, '').length
+  }
+
+  const XO_filter = str => {
     str = str.toLowerCase().split('');
     return str.filter(x => x === 'x').length === str.filter(x => x === 'o').length;
   }

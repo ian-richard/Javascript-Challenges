@@ -1,4 +1,4 @@
-function duplicateEncode(str){
+function duplicateEncode_og(str){
     var result = '';
     var word = str.toLowerCase();
     for (var i = 0; i < word.length; i++){
@@ -10,6 +10,17 @@ function duplicateEncode(str){
   }
     return result;
     }
+
+    function duplicateEncode(word){
+        return word
+          .toLowerCase()
+          .split('')
+          .map( function (a, i, w) {
+            return w.indexOf(a) == w.lastIndexOf(a) ? '(' : ')'
+          })
+          .join('');
+      }
+
 
 console.log(duplicateEncode("din") === "(((")//,"(((");
 console.log(duplicateEncode("recede") === "()()()")//,);

@@ -12,17 +12,27 @@ function getSum( a,b ){
     };
 }
 
-console.log(GetSum(5,-1) === 14);
-console.log(GetSum(505,4) ===127759);
-console.log(GetSum(321,123) === 44178);
+// console.log(getSum(5,-1) === 14);
+// console.log(getSum(505,4) ===127759);
+// console.log(getSum(321,123) === 44178);
 
 
-/* 
-Consider a simple function that adds the first N natural numbers. (e.g. sum(5) = 0 + 1 + 2 + 3 + 4 + 5 = 15).
 
-Here is a simple JavaScript implementation that uses recursion:
+// Consider a simple function that adds the first N natural numbers. (e.g. sum(5) = 0 + 1 + 2 + 3 + 4 + 5 = 15).
 
-function recsum(x) {
+// Here is a simple JavaScript implementation that uses recursion:
+
+function recsum(a, b) {
+    if (a === b) {
+        return a;
+    } else if ( a < b ) {
+        return a + recsum(a + 1, b);
+    }
+    else { return b + recsum(a, b + 1)
+    }
+}
+
+function recsum_og(x) {
     if (x === 0) {
         return 0;
     } else {
@@ -30,7 +40,13 @@ function recsum(x) {
     }
 }
 
+console.log(recsum(5,-1) === 14);
+console.log(recsum(505,4) ===127759);
+console.log(recsum(321,123) === 44178);
+
+/*
 If you called recsum(5), this is what the JavaScript interpreter would evaluate:
+https://stackoverflow.com/questions/33923/what-is-tail-recursion#37010
 
 recsum(5)
 5 + recsum(4)

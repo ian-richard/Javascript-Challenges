@@ -7,7 +7,11 @@
 
 // In the end, click "Submit" to submit your code pass this kata.
 
-const trueOrFalse = val => val ? "true" : "false";             
+const trueOrFalse_og = val => val ? "true" : "false";   
+
+function trueOrFalse(val){
+    return Boolean(val).toString();
+  }
 
 console.log(trueOrFalse(true) === "true");
 console.log(trueOrFalse(123) ==="true");

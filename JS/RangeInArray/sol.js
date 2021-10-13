@@ -27,7 +27,7 @@ function monkeyCount(n) {
 Array.from creates a new Array from an iterable object.
 
     Here the "iterable" is just {length:n} then the created array will have a length of n.
-    The second (optional) argument is a map function wich will be called on each item of the new created array: (_,i)=>i+1). Here the item (_) is ignored, but new item is formed with index (i) + 1.
+    The second (optional) argument is a map function which will be called on each item of the new created array: (_,i)=>i+1). Here the item (_) is ignored, but new item is formed with index (i) + 1.
 */
 
 console.log(monkeyCount(5)) //= [1, 2, 3, 4, 5]);

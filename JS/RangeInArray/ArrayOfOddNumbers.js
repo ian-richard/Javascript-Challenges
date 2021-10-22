@@ -8,4 +8,34 @@ function oddArr(start, end) {
     return newArr.filter(n => n%2)
 }
 
-console.log(oddArr(2,5)) //== [3,5]
+// console.log(oddArr(2,5)) //== [3,5]
+
+function oddArrWhile(start, end){
+    let res = [];
+    var i = start;
+    while ( i < end ){
+        i++
+        if ( i % 2 != 0){
+            res.push(i);
+        }
+        
+    }
+    return res;
+}
+
+// console.log("test 1: ", oddArrWhile(2,5)) //== [3,5]
+
+function oddArrFor(start, end){
+    let res = [];
+    for (var i = start; i <= end; i++){
+        if ( i % 2 != 0){
+            res.push(i);
+        }
+    }
+    return res;
+}
+
+console.log("test for-loop: ", oddArrFor(2,5)) //== [3,5]
+
+
+

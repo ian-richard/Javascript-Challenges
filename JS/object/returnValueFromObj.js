@@ -14,7 +14,7 @@
 // aliasGen('Larry', 'Brentwood') === 'Logic Bomb'
 // aliasGen('123abc', 'Petrovic') === 'Your name must start with a letter from A - Z.'
 
-function aliasGen(first, second){
+function aliasGen_og(first, second){
     var letters = /[a-z]/gi;
     var initial1 = first.charAt(0);
     var initial2 = second.charAt(0);
@@ -25,6 +25,14 @@ function aliasGen(first, second){
         var sn = surname[initial2.toUpperCase()];
         return fn + " " + sn;
       }
+}
+
+const initialCap = (str) => str[0].toUpperCase();
+const isValidName = (name) => /^[a-z]/i.test(name);
+const aliasGen = (fName, lName) => {
+  return (isValidName(fName) && isValidName(lName))
+    ? `${ firstName[initialCap(fName)] } ${ surname[initialCap(lName)] }`
+    : 'Your name must start with a letter from A - Z.';
 }
 
 console.log(aliasGen("Aaron", "Bean") === "Alpha Bomb");

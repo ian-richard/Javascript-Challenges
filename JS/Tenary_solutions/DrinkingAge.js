@@ -1,4 +1,6 @@
 
+
+
 const peopleWithAgeDrink = (age) =>
     age < 14 ? "drink toddy" :
     age < 18 ? "drink coke" :
@@ -8,6 +10,15 @@ const peopleWithAgeDrink = (age) =>
     console.log(peopleWithAgeDrink(20) == 'drink beer');
     console.log(peopleWithAgeDrink(13) == 'drink toddy');
     console.log(peopleWithAgeDrink(0) == 'drink toddy');
+
+
+function peopleWithAgeDrink_ifVersion(old) {
+    if (old < 14) return 'drink toddy';
+    if (old < 18) return 'drink coke';
+    if (old < 21) return 'drink beer';
+    if (old > 20) return 'drink whisky';
+    };
+
 
 
 // Description:

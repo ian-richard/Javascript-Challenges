@@ -9,3 +9,4 @@ function calculateDaysBetweenDates(begin, end) {
 }
 
 console.log(calculateDaysBetweenDates("08/05/2021", "11/04/2021")+1);
+

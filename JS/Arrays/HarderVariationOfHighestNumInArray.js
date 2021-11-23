@@ -23,8 +23,6 @@ const highestRank = (arr) => {
             obj[arr[i]] += 1;
         }
     }  
-     
-    console.log(obj)
     
     let highestFrequency = 0;
     let highestFrequencyNumberFirstLoop = 0;
@@ -51,7 +49,13 @@ const highestRank = (arr) => {
     
 }
 
+//refactor - (not written by me. NB it may be short, but it's pretty hard to read)
+function highestRank_hardToRead(arr){
+    return arr.sort((a,b)=>arr.filter(i=>i===b).length - arr.filter(i=>i===a).length)[0];
+  }
+
 var arr_easy = [12, 10, 8, 12, 7, 6, 4, 10, 12];
 var arr_hard = [12,10,8,12,7,6,4,10,12,10]
 var arr = [12,10,8,12,7,6,4,10,12,10,13, 13]
 console.log(highestRank(arr) === 12);
+console.log(highestRank_hardToRead(arr) === 12);

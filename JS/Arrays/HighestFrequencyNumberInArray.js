@@ -1,4 +1,6 @@
 
+// Complete the method which returns the number which is most frequent in the given input array.
+
 // create an object that has the number as the key and the frequency as the value
 // iterate through the array and add the number to the object
 // iterate through the object and find the highest frequency
@@ -31,4 +33,7 @@ const highestRank = (arr) => {
 }
 
 var arr = [12, 10, 8, 12, 7, 6, 4, 10, 12];
+//These both have two highest frequency numbers, hence will fail, see harder variation for solution (HarderVariationOfHighestNumInArray.js)
+// var arr_hard = [12,10,8,12,7,6,4,10,12,10]
+// var arr = [12,10,8,12,7,6,4,10,12,10]
 console.log(highestRank(arr) === 12);
